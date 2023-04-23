@@ -51,7 +51,10 @@ def get_transform(args, dataset, flag):
     crop_shape = (args.train_img_height, args.train_img_width)
     mean = args.dataset_mean
     
-    val_crop = (208,208)
+    if args.type == 'AINet':
+        val_crop = (208,208)
+    else:
+        val_crop = (256,256)
     mean1 = [0,0,0]
     std1=[255,255,255]
     std2=[1,1,1]

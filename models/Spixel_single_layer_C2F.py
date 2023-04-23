@@ -82,20 +82,13 @@ class Recurrent_Attn(nn.Module):
 class SpixelNet(nn.Module):
     expansion = 1
 
-    def __init__(self,dataset='', batchNorm=True):
+    def __init__(self,dataset='', batchNorm=True, Train=False):
         super(SpixelNet,self).__init__()
-        if dataset == 'ISIC_2017' or dataset=='BDS500':
-            input_chs = 3
-        elif dataset == 'BraTS2017':
-            input_chs = 4
-        elif dataset == 'ACDC' or dataset == 'TCIA':
-            input_chs = 1
-        #input_chs = 4
         self.batchNorm = batchNorm
         self.assign_ch = 9
-        self.Train = False
+        self.Train = Train
 
-        self.conv0a = conv(self.batchNorm, input_chs, 16, kernel_size=3)
+        self.conv0a = conv(self.batchNorm, 3, 16, kernel_size=3)
         self.conv0b = conv(self.batchNorm, 16, 16, kernel_size=3)
 
         self.conv1a = conv(self.batchNorm, 16, 32, kernel_size=3, stride=2)
@@ -198,6 +191,14 @@ class SpixelNet(nn.Module):
         return pixel_feat
 
     def forward(self, x):
+        #==uncomment for testing=============================================
+        if not self.Train:
+            mask_select = torch.tensor([[0,0,0],[0,1,0],[0,0,0]]).reshape(3,3)
+            b,c,h,w = x.shape
+            mask_select = mask_select.repeat(h,w)
+            self.mask_select = mask_select.view(1,1, h*3, w*3).float().cuda()
+        #===================================================================
+ 
         b,c,h,w = x.shape
         mask_select = self.mask_select0.repeat(h,w)
         self.mask_select = mask_select.view(1,1, h*3, w*3).float()
@@ -251,7 +252,7 @@ class SpixelNet(nn.Module):
         mask0 = self.pred_mask0(out)
         prob0 = self.softmax(mask0)
 
-        return prob0
+        return prob0, out_conv0_1
 
     def weight_parameters(self):
         return [param for name, param in self.named_parameters() if 'weight' in name]
@@ -268,9 +269,9 @@ def SpixelNet1l( data=None):
     return model
 
 
-def SpixelNet1l_bn(dataset='BDS500',data=None):
+def SpixelNet1l_bn(dataset='BDS500',data=None, Train=False):
     # model with batch normalization
-    model = SpixelNet(dataset=dataset,batchNorm=True)
+    model = SpixelNet(dataset=dataset,batchNorm=True, Train=Train)
     if data is not None:
         model.load_state_dict(data['state_dict'])
     return model
