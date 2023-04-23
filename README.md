@@ -35,7 +35,7 @@ python setup.py install --user
 cd ../..
 ```
 ## Demo
-Quick taste! Specify the image path and use the [pretrained model](https://drive.google.com/file/d/1WDcU7Oa5U4p37-prrA8f51IM3ycrtuCp/view?usp=sharing) to generate superpixels for an image
+Quick taste! Specify the image path and use the [pretrained model](https://drive.google.com/drive/folders/1cFeXqSKAQQsvyBOPavS3I0A4YIJhiUrR?usp=sharing) to generate superpixels for an image
 ```console
 python run_demo.py --image=PATH_TO_AN_IMAGE --output=./demo 
 ```
