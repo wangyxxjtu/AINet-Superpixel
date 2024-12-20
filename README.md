@@ -18,7 +18,7 @@ This is is a PyTorch implementation of the superpixel segmentation network intro
 
 ## 📝 Results: 
 
-The video results of our AINet (the videos are from Youtube, not included in the training set):
+-The video results of our AINet (the videos are from Youtube, not included in the training set):
 <p align="center">
 <img src=./framework/ball_final_cut.gif width="1300" height="280" /> 
 </p>
