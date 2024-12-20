@@ -4,8 +4,14 @@ This is is a PyTorch implementation of the superpixel segmentation network intro
 
 [Association Implanation Newwork for Superpixel Segmentation](https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_AINet_Association_Implantation_for_Superpixel_Segmentation_ICCV_2021_paper.pdf)
 
+## 💡 News
 
-## Results: 
+- `2024/06/24`: The data of [GUI Odyssey](https://arxiv.org/pdf/2406.08451) is released! Please check out [OpenGVLab/GUI-Odyssey](https://huggingface.co/datasets/OpenGVLab/GUI-Odyssey)!
+- `2024/06/13`: The paper of [GUI Odyssey](https://arxiv.org/pdf/2406.08451) is released! 
+<!-- And check our [project page]()! -->
+
+
+## 📝 Results: 
 
 The video results of our AINet (the videos are from Youtube, not included in the training set):
 <p align="center">
@@ -30,7 +36,7 @@ The Illustration of AINet:
 <img src="framework/workflow.png" width="845" alt="workflow" />
 
 
-## Prerequisites
+## ⚙️ Prerequisites
 The training code was mainly developed and tested with python 3.7, PyTorch 1.11, CUDA 11.5, and Ubuntu 16.04.
 
 During test, we make use of the component connection method in [SSN](https://github.com/NVlabs/ssn_superpixels) to enforce the connectivity 
@@ -40,14 +46,14 @@ cd third_party/cython/
 python setup.py install --user
 cd ../..
 ```
-## Demo
+## 💫 Demo
 Quick taste! Specify the image path and use the [pretrained model](https://drive.google.com/drive/folders/1cFeXqSKAQQsvyBOPavS3I0A4YIJhiUrR?usp=sharing) to generate superpixels for an image
 ```console
 python run_demo.py --image=PATH_TO_AN_IMAGE --output=./demo 
 ```
 The results will be generate in a new folder under ```/demo``` called ```spixel_viz```.
 
-### Enjoy in the Colab
+### 🚀 Enjoy in the Colab
 
 We also provide an online [Colab demo](https://drive.google.com/drive/folders/1ZudgYbMHjuoLiZRCPe9VVPCM7C9561sY?usp=sharing) 
 ```console
@@ -56,7 +62,7 @@ step 2: Open the 'AINet-Demo.ipynb' file
 step 3: Run the code block one by one
 ```
 
-### Play in the docker
+### ⭐️ Play in the docker
 
 Go to [Docker directory](https://github.com/wangyxxjtu/AINet-Superpixel/edit/master/docker) and following the introductions.
  
@@ -73,7 +79,7 @@ The code will generate three folders under the ```<DUMP_DIR>```, named as ```/tr
 record the absolute path of the images, named as ```train.txt```, ```val.txt```, and ```test.txt```.
 
 
-## Training
+## 🛠️ Training
 Once the data is prepared, we should be able to train the model by running the following command:
 ```console
 python main.py --data=<DATA_DIR> --savepath=<PATH_TO_SAVE_CKPT> --workers 4 --input_img_height 208 --input_img_width 208 --print_freq 20 --gpu 0 --batch-size 16  --suffix '_myTrain' 
@@ -87,7 +93,7 @@ tensorboard --logdir=<CKPT_LOG_DIR> --port=8888
 
 If everything is set up properly, reasonable segmentation should be observed after 10 epochs.
 
-## Testing
+## 🛠️ Testing
 We provide test code to generate: 1) superpixel visualization and 2) the```.csv``` files  for evaluation. 
 
 To test on BSDS500, run
@@ -102,7 +108,7 @@ to ```<NYU_TEST>``` , or follow the [intruction on the superpixel benchmark](htt
 python run_infer_nyu.py --data_dir=<NYU_TEST> --output=<TEST_OUTPUT_DIR> --pretrained=<PATH_TO_THE_CKPT>
 ```
 
-## Evaluation
+## 🛠️ Evaluation
 We use the code from [superpixel benchmark](https://github.com/davidstutz/superpixel-benchmark) for superpixel evaluation. 
 A detailed  [instruction](https://github.com/davidstutz/superpixel-benchmark/blob/master/docs/BUILDING.md) is available in the repository, please
  
@@ -140,7 +146,7 @@ several files should be generated in the ```map_csv``` folders in the correspond
 ```console
 python plot_benchmark_curve.py --path '/home/name/superpixel/AINet/eval/test_multiscale_enforce_connect/' #will generate the similar curves in the paper
 ```
-## Citation
+## 🖊️ Citation
 If you use our code, please cite our work:
 ``` bash
 @InProceedings{Wang_2021_ICCV,
@@ -153,5 +159,5 @@ If you use our code, please cite our work:
 }
 ```
 
-## Acknowledgement
+## 🖊️ Acknowledgement
 This code is built on the top of SCN: https://github.com/fuy34/superpixel_fcn Thank the authors' contribution. 
