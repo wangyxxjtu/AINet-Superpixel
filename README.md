@@ -16,7 +16,7 @@ The video results of our AINet (the videos are from Youtube, not included in the
 </p>
 
 Qualitative resutls of superpixel segmentation and object proposal:
-<img src="framework/superpixel.png" width="1300" alt="workflow" />
+<img src="example_image/superpixel.png" width="1300" alt="workflow" />
 
 ## Introduction
 The Illustration of AINet:
