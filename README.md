@@ -24,7 +24,7 @@ Qualitative Results of download tasks of Object Proposal Generation (Top Row) an
 <img src="example_image/disparity.png" width="1300" alt="workflow" />
 
 
-## Introduction
+## 🔆 Introduction
 The Illustration of AINet:
 
 <img src="framework/workflow.png" width="845" alt="workflow" />
