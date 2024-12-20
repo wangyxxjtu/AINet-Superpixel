@@ -19,7 +19,7 @@ Qualitative resutls of superpixel segmentation:
 <img src="example_image/superpixel.png" width="1300" alt="workflow" />
 <img src="example_image/superpixel_medical.png" width="1300" alt="workflow" />
 
-Qualitative Results of download tasks of Object proposal Generation and Disparity Matching:
+Qualitative Results of download tasks of Object Proposal Generation (Top Row) and Disparity Matching (Bottom Row):
 <img src="example_image/object.png" width="1300" alt="workflow" />
 <img src="example_image/disparity.png" width="1300" alt="workflow" />
 
