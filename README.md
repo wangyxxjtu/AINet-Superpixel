@@ -26,11 +26,11 @@ The video results of our AINet (the videos are from Youtube, not included in the
 <img src=./framework/cartoon_final_cut.gif width="1300" height="280" /> 
 </p>
 
-Qualitative resutls of superpixel segmentation:
+-Qualitative resutls of superpixel segmentation:
 <img src="example_image/superpixel.png" width="1300" alt="workflow" />
 <img src="example_image/superpixel_medical.png" width="1300" alt="workflow" />
 
-Qualitative Results of download tasks of Object Proposal Generation (Top Row) and Disparity Matching (Bottom Row):
+-Qualitative Results of download tasks of Object Proposal Generation (Top Row) and Disparity Matching (Bottom Row):
 <img src="example_image/object.png" width="1300" alt="workflow" />
 <img src="example_image/disparity.png" width="1300" alt="workflow" />
 
