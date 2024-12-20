@@ -5,9 +5,9 @@ This is is a PyTorch implementation of the superpixel segmentation network intro
 [Association Implanation Newwork for Superpixel Segmentation](https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_AINet_Association_Implantation_for_Superpixel_Segmentation_ICCV_2021_paper.pdf)
 
 ## 💡 News
-
-- `2024/06/24`: The data of [GUI Odyssey](https://arxiv.org/pdf/2406.08451) is released! Please check out [OpenGVLab/GUI-Odyssey](https://huggingface.co/datasets/OpenGVLab/GUI-Odyssey)!
-- `2024/06/13`: The paper of [GUI Odyssey](https://arxiv.org/pdf/2406.08451) is released! 
+- `2024/12/20`: We build a more powerful model AINet+ on the top of AINet. See more details in: xxxx
+- `2022/07/18`: To ease the overall experiments, we build a docker to reproduce all reported results in our paper! Please Go to [Docker directory](https://github.com/wangyxxjtu/AINet-Superpixel/edit/master/docker)
+- `2022/01/12`: An online Colab is relased to quick taste AINet: [Colab demo](https://drive.google.com/drive/folders/1ZudgYbMHjuoLiZRCPe9VVPCM7C9561sY?usp=sharing)! 
 <!-- And check our [project page]()! -->
 
 
