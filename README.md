@@ -8,7 +8,7 @@ This is is a PyTorch implementation of the superpixel segmentation network intro
 > Feel free to contact Yaxiong (wangyx15@stu.xjtu.edu.cn) if you have any question or confusion!
 
 ## 💡 News
-- `2024/12/20`: We build a more powerful model AINet+ on the top of AINet. See more details in: xxxx
+- `2024/12/20`: AINet+ is released, an improved model for superpixels generation built on the top of AINet. See more details in: xxxx
 - `2022/07/18`: To ease the overall experiments, we build a docker to reproduce all reported results in our paper! Please Go to [Docker directory](https://github.com/wangyxxjtu/AINet-Superpixel/edit/master/docker)
 - `2022/01/12`: An online Colab is relased to quick taste AINet: [Colab demo](https://drive.google.com/drive/folders/1ZudgYbMHjuoLiZRCPe9VVPCM7C9561sY?usp=sharing)! 
 <!-- And check our [project page]()! -->
