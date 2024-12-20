@@ -3,6 +3,7 @@
 This is is a PyTorch implementation of the superpixel segmentation network introduced in ICCV paper (2021):
 
 [Association Implanation Newwork for Superpixel Segmentation](https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_AINet_Association_Implantation_for_Superpixel_Segmentation_ICCV_2021_paper.pdf)
+> Yaxiong Wang, Yunchao Wei✉️,  Xueming Qian✉️, Li Zhu, Yi Yang  
 
 ## 💡 News
 - `2024/12/20`: We build a more powerful model AINet+ on the top of AINet. See more details in: xxxx
