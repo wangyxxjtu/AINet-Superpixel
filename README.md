@@ -66,7 +66,7 @@ step 3: Run the code block one by one
 
 Go to [Docker directory](https://github.com/wangyxxjtu/AINet-Superpixel/edit/master/docker) and following the introductions.
  
-## Data preparation 
+## 🛠️  Data preparation 
 To generate training and test dataset, please first download the data from the original [BSDS500 dataset](http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_full.tgz), 
 and extract it to  ```<BSDS_DIR>```. Then, run 
 ```console
@@ -159,5 +159,5 @@ If you use our code, please cite our work:
 }
 ```
 
-## 🖊️ Acknowledgement
+## 📖 Acknowledgement
 This code is built on the top of SCN: https://github.com/fuy34/superpixel_fcn Thank the authors' contribution. 
