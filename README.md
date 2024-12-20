@@ -15,8 +15,14 @@ The video results of our AINet (the videos are from Youtube, not included in the
 <img src=./framework/cartoon_final_cut.gif width="1300" height="280" /> 
 </p>
 
-Qualitative resutls of superpixel segmentation and object proposal:
+Qualitative resutls of superpixel segmentation:
 <img src="example_image/superpixel.png" width="1300" alt="workflow" />
+<img src="example_image/superpixel_medical.png" width="1300" alt="workflow" />
+
+Qualitative Results of download tasks of Object proposal Generation and Disparity Matching:
+<img src="example_image/objectl.png" width="1300" alt="workflow" />
+<img src="example_image/disparity.png" width="1300" alt="workflow" />
+
 
 ## Introduction
 The Illustration of AINet:
