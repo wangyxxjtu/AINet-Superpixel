@@ -91,6 +91,13 @@ python main.py --data=<DATA_DIR> --savepath=<PATH_TO_SAVE_CKPT> --workers 4 --in
 ```
 If you want to continue training from a ckpt, just add --pretrained=<PATH_TO_CKPT>. You can specify the training config in the 'train.sh' script.
 
+## 🛠️  Training AINet+
+The model arch of AINet is defined in models/Spixel_single_layer_C2F.py, so you can easiy switch to AINet+ model by replacing the "Spixel_single_layer" to "Spixel_single_layer_C2F".
+Specifiy the Arch. via command args:
+``` console
+
+```
+
 The training log can be viewed from the `tensorboard` session by running
 ```console
 tensorboard --logdir=<CKPT_LOG_DIR> --port=8888
