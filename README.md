@@ -5,7 +5,7 @@ This is is a PyTorch implementation of the superpixel segmentation network intro
 [Association Implanation Newwork for Superpixel Segmentation](https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_AINet_Association_Implantation_for_Superpixel_Segmentation_ICCV_2021_paper.pdf)
 > Yaxiong Wang, Yunchao Wei✉️,  Xueming Qian✉️, Li Zhu, Yi Yang
 
-> Feel free to contact Yaxiong (wangyx15@stu.xjtu.edu.cn) if you have any question or confusion!
+> Feel free to contact Yaxiong (wangyx15@stu.xjtu.edu.cn) if you have any question about the code and our paper!
 
 ## 💡 News
 - `Update!`: AINet+ is released, an improved model for superpixels generation built on the top of AINet. Check "Training" section. 
