@@ -89,17 +89,13 @@ Once the data is prepared, we should be able to train the model by running the f
 ```console
 python main.py --data=<DATA_DIR> --savepath=<PATH_TO_SAVE_CKPT> --workers 4 --input_img_height 208 --input_img_width 208 --print_freq 20 --gpu 0 --batch-size 16  --suffix '_myTrain' 
 ```
-or training AINet+
-```console
-python main.py --data=<DATA_DIR> --newModel --savepath=<PATH_TO_SAVE_CKPT> --workers 4 --input_img_height 208 --input_img_width 208 --print_freq 20 --gpu 0 --batch-size 16  --suffix '_myTrain'
-```
 If you want to continue training from a ckpt, just add --pretrained=<PATH_TO_CKPT>. You can specify the training config in the 'train.sh' script.
 
 ## 🛠️  Training AINet+
 The model arch of AINet is defined in models/Spixel_single_layer_C2F.py, so you can easiy switch to AINet+ model by replacing the "Spixel_single_layer" to "Spixel_single_layer_C2F".
 Specifiy the Arch. via command args:
-``` console
-
+```console
+python main.py --data=<DATA_DIR> --newModel --savepath=<PATH_TO_SAVE_CKPT> --workers 4 --input_img_height 208 --input_img_width 208 --print_freq 20 --gpu 0 --batch-size 16  --suffix '_myTrain'
 ```
 
 The training log can be viewed from the `tensorboard` session by running
